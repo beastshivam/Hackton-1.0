@@ -1,0 +1,270 @@
+/* url for icon changes and fonts changes link imported */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* selecting/giving all HTML elements on the page changes  */
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
+}
+
+/* giving a body background color as per my understanding */
+body{
+    display: relative;
+    background-color: rgb(233,230,225);
+    height: 100%;
+}
+
+/* navigation conatiner defining header section part  */
+.nav {
+    top: 0;  
+    overflow: hidden;
+    background-color: rgb(51,51,51);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+/*  defined hyperlink for the anchor tag all header container   */
+.nav .mytune a ,.Overview a ,.Music a, .Video a ,.giftcard a{
+    float: left;
+    color: rgb(242,242,242);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* over a curser mouse how should anchor tag behave  */
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+                    /* ---------------------------------------------------------------------------------------- */
+                                          /* body section after header is started  */
+                    /* ---------------------------------------------------------------------------------------- */
+/* home section start  */
+#m-home {
+    position: relative;
+}
+
+/* background img height and width defining */
+#m-home img{
+    width: 100%;
+    height: 100%;
+}
+
+/* all text tag overlay on background img container  */
+.home-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+}
+
+/*  tag defined in container over a img  */
+.m-head{
+  color: red;
+  margin-bottom: 13rem;
+  align-items: center;
+  text-align: center;
+  font-weight: 100;
+  font-size: 5rem;
+}
+
+/* h1 tag behaviour define how it should behave over an background img  */
+  .home-overlay h1 {
+    padding-top: 1rem;
+    display: absolute;
+    margin-bottom: 8rem;
+    padding-left: 1rem;
+  }
+
+/* paragraph of music defined in MyTune container layout  */
+.home-overlay .home-p{
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: rgb(209, 206, 206);
+  background-color: rgba(80, 80, 80, 0.5);
+}
+
+/* container musics start  */
+#m-music{
+  padding: 2rem;
+  position: relative;
+  background-color: rgba(37, 35, 35, 0.8);
+}
+
+/* working with music  symbol icon   */
+#m-music i{
+  color: red;
+  font-size: 2rem;
+  display: flex;
+  padding-top: 2.5rem;
+  margin-bottom: 0.1rem;
+  margin-left: 40rem;
+  text-align: center;
+  align-items: center;
+}
+
+/* h2 section behaviour and margin with icon symbol  */
+#m-music .ms{
+  display: flex;
+  margin-top: -2.3rem;
+  margin-left: 42.5rem;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+/* music conatiner --> h4 tag section  */
+.h-m{
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-right: 5rem;
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+
+/* first p tag in music section above a image  */
+.music-p{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* All button behaviour and how it should represent in container  */
+button{
+  display: flex;
+  background-color: red;
+  color: white;
+  margin: 1.5rem 1rem 1rem 39rem;
+  padding: 0.5rem 1rem ;
+  border: 0.1rem solid rgba(37, 35, 35, 0.8);
+  align-items: center;
+  text-align: center;
+}
+
+/*second p tag in music section after a image   */
+#m-music .music-p2 {
+  color: white;
+  padding-left: 6rem;
+  font-weight: 200;
+  font-size: 2rem;
+  background-color:  rgba(37, 35, 35, 0.1);
+}
+
+/* started video section conatiner  */
+#m-video{
+  position: relative;
+  background-color: rgba(37, 35, 35, 0.8);
+  background-color: black;
+}
+
+/* backgound as a img defined in video container */
+#m-video img{
+  width: 100%;
+  height: 100%;
+  filter: blur(6px); 
+}
+
+/* h3 tag section in video container behaviours */
+.v-h3{
+  display: relative;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+/* 1'st p tag section in video positioning */
+.v-p{
+  color: grey;
+  padding: 0.5rem;
+}
+/* all text tag overlay on background img  */
+.over-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+}
+/* h4 tag with fade in timely  */
+.over-video h4{
+  display: absolute;
+  color: orange;
+  font-size: 1.6rem;
+  text-align: center;
+  animation: fadeIn 2.5s ease-in-out 1.3s infinite; /* for fade taken a refrence from internet to represent */
+}
+/* for fade taken a refrence from internet fo better behaviour  over a img with fades text */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*2'nd p section text in video */
+.over-video p{
+  color: rgb(52, 255, 116);
+  padding: 0.5rem;
+}
+
+/* gitcard defined in grid for lookout  */
+#m-giftcard{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: rgb(56, 52, 52);
+}
+
+/* gift section text defined  */
+#m-giftcard .m-r-gift{
+  margin-top: 10rem;
+  display:relative;
+  color: white;
+  gap: 2rem;
+}
+ /* h tag of gift  */
+.m-r-gift h2{
+  color: white;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+/* p section of right side container behaviours defined  */
+.m-r-gift .pg{
+  font-weight: 200;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+/* paragraph section in right side of container */
+.m-r-gift .p-gift{
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+/* arrow pointer with text on right section of container */
+.m-r-gift .ar-gt{
+  display: flex;
+  margin-top: 1.4rem;
+  color: white;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+/* container defined for hover curser behaviour on icon */
+.m-r-gift .ar-gt:hover{
+color: yellow;
+}
+/* container defined for hover curser behaviour on p tag */
+.m-r-gift .ar-gt p{
+  margin-top: -0.3rem;
+}

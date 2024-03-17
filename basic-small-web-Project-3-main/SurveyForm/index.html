@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Survey Form</title>
+</head>
+<body>
+  <!--=============== header section starting from this points  =======================-->
+  <header class="main-header-top">
+    <div class="header">
+        <div class="left">
+            <div class="logo">
+                <i class="fa-solid fa-cube"></i>
+            </div>
+            <!--container of text -->
+            <h2 class="survey">Form Survey</h2>
+        </div>
+
+        <!--======== starting the right side of header section container ======-->
+        <div class="right">
+                <!-- container for home icon and text section  -->
+                <div class="home">
+                    <a href="#" class="home-link"> 
+                        <h6 class="right-home">Home</h6>
+                    </a>
+                </div>
+                <!-- container for source code text  -->
+            <div class="source-code">
+                <a href="#" class="source-code-link">    
+                    <h6 class="right-source-code">Source Code</h6>
+                </a>
+            </div>
+            <!-- container for Signup text section -->
+            <div class="Signup">
+                <a href="#" class="sign-up-link">
+                    <h6 class="right-sign-up">Sign Up</h6>
+                </a>
+            </div>
+            <!-- container for Login text section -->
+            <div class="login">
+                <a href="#" class="login-link">
+                    <h6 class="right-login">Log In</h6>
+                </a>
+            </div>         
+    </div>
+</header>
+<!--================================= closed header section  =========================================-->
+<div class="image-container">
+    <img src="./Solo Leveling Sung Jin Woo.jpg" alt="">
+    <div class="text-overlay">
+    <div class="center-section">
+        <h2>Free Survey Form</h2>
+        <p>Thank you for taking the time to help us improve the platform</p>
+  </div>
+        <div class="detail-fill">
+            <div class="name">
+                <h4>Name</h4>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="email">
+                <h4>Email</h4>
+                <input type="email" name="" id="" placeholder="example@email.com" required pattern="[^\s@]+@[^\s@]+\.[^\s@]+">
+            </div>
+            <div class="age">
+                <h4>Age</h4>
+                <input type="text" placeholder="Age" required min="1" max="120">
+            </div>
+            <div class="options">
+                <h4>Which option best describes your current role?</h4>
+                <select name="Select current Roll" id="select-roll" placeholder="current-roll">
+                    <option value="student">Student</option>
+                    <option value="part-t-job">Part time Job</option>
+                    <option value="full-t-emp">Full Time Employee</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="prefer-not-say">Prefer Not to Say</option>
+                </select>
+            </div>
+            <div class="radio">
+                <h4>Would you recommend to a friend?</h4>
+                <input type="radio" name="Definitely" id=""><h5>Definitely</h5>
+                <input type="radio" name="Maybe" id=""><h5>Maybe</h5>
+                <input type="radio" name="Not sure"><h5>Not sure</h5>
+            </div>
+            <!-- checkbox option container -->
+            <div class="improve">
+                <h4>What would you like to see improved?<span class="span-h4"> (Check all that apply)</span></h4>
+                <div class="improve-in">
+                    <input type="checkbox" name="Front-end Projects" ><h5 class="r-h5">Front-end Projects</h5>
+                    <input type="checkbox" name="Back-end Projects" ><h5 class="r-h5">Back-end Projects</h5>
+                    <input type="checkbox" name="Data Visualization" ><h5 class="r-h5">Data Visualization</h5>
+                    <input type="checkbox" name="Challenges" ><h5 class="r-h5">Challenges</h5>
+                    <input type="checkbox" name="Open Source Community" ><h5 class="r-h5">Open Source Community</h5>
+                    <input type="checkbox" name="Gitter help rooms" ><h5 class="r-h5">Gitter help rooms</h5>
+                    <input type="checkbox" name="Videos" ><h5 class="r-h5">Videos</h5>
+                    <input type="checkbox" name="City Meetups" ><h5 class="r-h5">City Meetups</h5>
+                    <input type="checkbox" name="Wiki" ><h5 class="r-h5">Wiki</h5>
+                    <input type="checkbox" name="Forum" ><h5 class="r-h5">Forum</h5>
+                    <input type="checkbox" name="Additional Courses" ><h5 class="r-h5">Additional Courses</h5>
+                </div>
+            </div>  
+            <div class="suggestion">
+                <h4>Any comments or suggestions?</h4>
+                <!-- <input type="textarea" name="suggestion" id=""> -->
+                <textarea name="textarea" id="" cols="40" rows="5" placeholder="can give any suggestions?"></textarea>
+            </div>
+            <!-- defined button in this section  -->
+            <input type="button" value="button" class="button"> 
+        </div>
+    </div>
+</div>    
+</body>
+</html>
